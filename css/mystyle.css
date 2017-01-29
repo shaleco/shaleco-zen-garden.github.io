@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Economica:400,400i,700,700i');
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*Mobile layout*/
+
+body{
+    font-family: Abel, sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    padding: 10px;
+    color: #2B3E42;
+    background-color: #F7F3E8;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: underline;
+    font-weight: bold;
+    color:#2B3E42;
+	padding: 3px;
+}
+
+a:hover{
+    color: #77BED2;
+}
+
+
+/*Main Heading*/
+h1{
+    font-family: Economica, sans-serif;
+    font-size: 600%;
+    line-height: 1;
+    text-align: center;
+    
+}
+
+/*Sub headings*/
+h2, h3{
+    font-family: Economica, sans-serif;
+    font-size: 25px;
+    text-align: right;
+}
+
+h2,h3,p{
+    margin-bottom: 18px;
+}
+
+/*header styles*/
+
+h1{
+    background-color: #2B3E42;
+    color:#F7F3E8;
+    height: 370px;
+    background-image: url(../images/stars.png);
+    background-size: 380px, auto;
+    margin: -10px -10px -10px -10px;
+    z-index: 1000;
+    padding-top: 30px;
+    
+    /*Animate the star background on header*/
+    
+    -webkit-animation:stars 500s linear infinite; 
+	animation:stars 500s linear infinite;
+    
+}
+
+/*Icon of the earth above the title*/
+
+h1::before{
+    content: '';
+    display: block;
+    width; 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    background-image: url(../images/earth.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+/*Line below the title*/
+
+h1::after{
+    content: '';
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    height:10px;
+    background-color: #F7F3E8;
+
+}
+
+
+/*SIDEBAR*/
+
+.design-selection{
+    background-color: #77BED2;
+    margin: -10px -10px 0 -10px;
+    font-family: Economica, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+}
+
+/*Center title, change font size and make bold and italic*/
+.design-selection h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 37px;
+    font-style: italic;
+
+}
+
+.design-selection a{
+    display: block;
+	/*remove underline from links*/
+	text-decoration: none;
+	padding: 3px;
+}
+
+/*change background colour when hovering over links*/
+.design-selection a:hover{
+    background-color: #F7F3E8;
+	border-radius: 20%;
+}
+
+
+/*rocket ship above sidebar*/
+
+.design-selection h3::before{
+    content: '';
+    display: block;
+    background-image: url(../images/rocket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+
+}
+
+
+/*Add space at the top and change the font size*/
+.design-name{
+    font-size: 25px;
+    margin-top: 10px;
+    
+}
+
+/*Add border under author*/
+ 
+.designer-name{
+    font-size: 20px;
+    border-bottom: solid 3px #2B3E42;
+}
+
+
+/*centre the nav bar on the page on the page*/
+
+.design-selection nav{
+    margin-left: 115px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*MAIN CONTENT*/
+
+.preamble h3{
+    margin-top: 20px;
+}
+
+/*Intro style*/
+
+.summary, header h2{
+    text-align: center;
+    background-color: #F2583E;
+    color: #F7F3E8;
+    margin: -10px -10px 0px -10px;
+    padding-bottom: 18px;
+}
+
+header h2{
+    margin-bottom: 0px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+/*Creating a rounded background when hovering over intro links*/
+.summary a{
+	padding: 4px;
+	border-radius: 50%;
+}
+.summary a:hover{
+	background-color: #F7F3E8;
+	
+}
+
+/*Planets before h3 headings*/
+
+.preamble h3{
+    content: '';
+    display: block;
+    background-image: url(../images/planet1.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+}
+
+.explanation h3{
+    content: '';
+    display: block;
+    background-image: url(../images/planet2.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+}
+
+.participation h3{
+    content: '';
+    display: block;
+    background-image: url(../images/planet3.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+}
+
+.benefits h3{
+    content: '';
+    display: block;
+    background-image: url(../images/planet4.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+}
+
+.requirements h3{
+    content: '';
+    display: block;
+    background-image: url(../images/planet5.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+}
+
+/*Add space at the bottom of the main content*/
+.requirements{
+    padding-bottom: 40px;
+}
+
+/*FOOTER DESIGN*/ 
+
+
+.design-archives, .zen-resources{
+    background-color: #2B3E42;
+     margin: -30px -10px -30px; -30px;
+    padding-bottom: 20px;
+    background-image: url(../images/stars.png);
+    background-size: 500px, auto;
+	position: relative;
+    
+ /*Animate the star background on footer*/
+    
+    z-index:300;
+
+    -webkit-animation:stars 700s linear infinite;
+
+    animation:stars 700s linear infinite;
+}
+
+/*change font colour and centre all content */
+
+.design-archives, .design-archives a, .zen-resources, .zen-resources a, .design-archives h3, .zen-resources h3  {
+    color: #F7F3E8;
+    text-align: center;
+}
+
+
+/*Add space at the top and bottom*/
+.design-archives{
+    margin-top: 150px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    z-index: 200;
+}
+
+/*Add the blue circle before footer*/
+
+
+.requirements p:last-child::after{
+	content: '';
+    display: block;
+    height: 210px;
+    background-color: #D5E1DD;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 240px;
+    right: -10px;
+    left: -10px;
+}
+
+
+
+/*Make the footer go to the bottom*/
+
+.page-wrapper{
+    position: relative;
+}
+
+/*Positioning the footer at the bottom*/
+.main footer{
+    position: absolute;
+	z-index: 301;
+    bottom: 270px;
+    text-align: center;
+    width: 100%;
+    padding-top:  15px;
+    padding-bottom: 15px;
+}
+
+/*Add circle backgrounds to the links */
+.main footer a{
+    color:#2B3E42;
+    text-decoration: none;
+    font-size: 15px;
+    padding:15px;
+    background-color: #F7F3E8;
+    border-radius: 50%;
+    margin-left: 5px;
+    
+}
+
+/*Change colour of background when hovering over link */
+
+.main footer a:hover{
+    background-color: #77BED2;
+}
+
+/*Animation makeing the stars move across the sky*/
+
+@-webkit-keyframes stars {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@keyframes stars {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+/*Adjusting the footer for smaller phone screens (Particulary the iphone 4 and 5)*/
+
+@media only screen and (max-width: 570px){
+    
+    .main footer a{
+        padding: 10px;
+    }
+}
+
+
+/*Desktop layout (Screen over 650px)*/
+
+@media only screen and (min-width: 735px){
+   
+   /*Making the background white*/
+	body{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+		max-width: 100%;
+    }
+	
+	/*Change the font sizes for the intro*/
+	.summary{
+		font-size: 18px;
+	}
+	
+	h2{
+		font-size: 36px;
+	}
+	
+	h3{
+		font-size: 30px;
+	}
+	
+    /*Create the circular beige bcackground circle*/
+    .page-wrapper{
+        background-color: #F7F3E8;
+        z-index: 0;
+		width: 100%;
+		border-radius: 50%;
+		
+    }
+    
+
+	/*sidebar layout design, changing the positioning and making it align to the left*/
+	.design-selection{
+		border-bottom-right-radius: 50%;
+		border-top-right-radius: 50%;
+		position: absolute;
+		top: 750px;
+		width: 50%;
+		overflow: hidden;
+		padding-bottom: 60px;
+	
+	}
+	
+	/*Adjusting the header*/
+	h1{
+		height: 350px;
+		background-size: 500px, auto;
+		/*changing the font size and positioning */
+		font-size: 1200%;
+		text-align: left;
+		text-indent: 10%;
+		padding-top: 180px;
+		padding-bottom: 50px;
+	
+	}
+	
+	/*max width and margin on sidebar and content of the site*/
+	
+	.design-selection, .preamble, .explanation, .participation, .benefits, .requirements{
+		max-width: 40%;
+		margin-right: 110px;
+	}
+	
+	/*Make the content align to the right, makes space between sidebar and content */
+	.preamble, .explanation, .participation, .benefits, .requirements{
+		max-width: 40%;
+		margin-left: auto;
+		font-size: 15px;
+	}
+	
+	/*Beige line in the header design and layout*/
+	h1::after{
+
+		height:15px;
+		position: relative;
+		top: 100px;
+		background-color: #F7F3E8;
+	}
+	
+	/*Earth icon in header*/
+	h1::before{
+		/*Changing the size of it*/
+		width: 100%;
+		height: 240px;
+		/*Changing the position of it*/
+		position: absolute;
+		background-position: right;
+		top:5%;
+		right: 5%;
+
+	}
+	/*Make the rocketship bigger*/
+	.design-selection h3::before{
+		height: 250px;
+	}
+
+
+/*Tablet design*/
+
+@media only screen and (max-width: 1210px) and (min-width:840px){
+	
+	h1{
+		height: 500px;
+		padding-top: 50px;
+		text-align: center;
+	}
+	
+	/*Hide the beige line at tablet size*/
+	h1::after{
+		display: none;
+	}
+	
+	/*Earth icon*/
+	h1::before{
+		height: 240px;
+		position: relative;
+		background-position: center;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+	
+
+	
+	/*So the sidebar does not overlap with the header when the layout gets smaller*/
+	.design-selection{
+		top:768px;
+	}
+	
+}
+
+
+/*Intermediate media query*/
+@media only screen and (max-width: 840px) and (min-width:735px){
+	h1{
+		font-size: 900%;
+		height:550px;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+	h1::after{
+		display: none;
+	}
+	
+	/*Earth icon*/
+	h1::before{
+		width: 100%;
+		height: 200px;
+		position: relative;
+		background-position: center center;
+		margin-bottom: 70px;
+		
+	}
+	
+	/*So the sidebar does not overlap with the header when the layout gets smaller*/
+	.design-selection{
+		top:775px;
+	}
+	
+}
+
+/*For widescreens */
+	@media only screen and (min-width: 1260px){
+	.page-wrapper{
+		max-width: 1700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
+
+
+
+
+
